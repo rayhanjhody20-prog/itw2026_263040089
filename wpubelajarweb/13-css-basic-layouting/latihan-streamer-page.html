@@ -18,12 +18,72 @@ body {
   font-family: inter, arial, sans-serif;
   background: linear-gradient(135deg, #0f172a, #0e293b );
   color: #f1f5f9;
-  line-height: 1,6;
+  line-height: 1.6;
   min-height: 100vh;
 }
 
-.top banner {
+.top-banner {
   background: linear-gradient(to right, #f59e0b, #fbbf24);
+  color: #0f172a;
+  text-align: center;
+  padding: 12px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 0.3);
+  text-shadow: 1px 1px 2px rgb(0 0 0 / 0.4);
+}
+
+.navbar {
+  background-color: #0e293b;
+  padding: 15px 50px;
+  border-bottom: 2px solid #334155;
+  overflow: auto;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.navbar .nav-logo {
+  float: left;
+  color: #3b82f6;
+  font-size: 24px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.navbar .nav-menu {
+  float: right ;
+  list-style: none;
+  margin-top: 5px;
+}
+
+.navbar .nav-menu li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.navbar .nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.navbar .nav-menu li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: #3b82f6;
+  transition: width 0.3s;
+}
+
+.navbar .nav-menu li a:hover::after {
+  width: 100%;
 }
 
 </style>
