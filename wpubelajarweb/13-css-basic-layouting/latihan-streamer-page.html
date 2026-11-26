@@ -198,6 +198,83 @@ main .schedule ul li b {
   color: #3b82f6;
 }
 
+main .gallery {
+  text-align: center;
+}
+
+main .gallery h3 {
+  text-align: left;
+  margin-bottom: 30px;
+  border-left: 6px solid #3b82f6;
+  padding-left: 15px;
+}
+
+main .gallery .video-item {
+  display: inline-block;
+  width: 23%;
+  margin: 1%;
+  background-color: #0e293b;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #334155;
+  text-align: left;
+  transition: 0.3s;
+}
+
+main .gallery .video-item:hover {
+  box-shadow: 0 10px 20px rgb(59 130 246 / 0.3);
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+main .gallery:has(.video-item:hover) .video-item:not(:hover){
+  opacity: 0.5; 
+  filter: grayscale(80%);
+}
+
+main .gallery .video-item img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+main .gallery .video-item .video-info {
+  padding: 15px;
+}
+
+main .gallery .video-item .video-info h4 {
+  font-size: 13px;
+  margin-bottom: 8px;
+} 
+
+main .gallery .video-item .video-info p {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.chat-btn {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  width: 70px;
+  height: 70px;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 32px;
+  text-align: center;
+  line-height: 70px;
+  box-shadow: 0 15px 30px rgb(0 0 0 / 0.4);
+  transition: 0.3s;
+}
+
+.chat-btn:hover {
+  background-color: #2563eb;
+  transform: scale(1.1);
+}
+
 </style>
 
 </head>
@@ -275,7 +352,7 @@ main .schedule ul li b {
   </figcaption>
 </figure>
 <figure class="video-item">
-<img src="https://picsum.photos/id/104/400/250" alt="Clip 4">  
+<img src="https://picsum.photos/id/104/400/250" alt="Clip 4">
   <figcaption class="video-info">
    <h4>Top 5 Stream Fails</h4>
     <p>400K Views • 1 week ago</p>
